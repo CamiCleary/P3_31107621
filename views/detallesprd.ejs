@@ -2,11 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Dreamland">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="https://i.pinimg.com/564x/75/d7/79/75d7799d96795351147bf206f8a8921a.jpg">
-    <meta property="og:description" content="Home Store">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/admin.css">
@@ -138,17 +133,6 @@
     </style>
 
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DGJH4S5CM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1DGJH4S5CM');
-</script>
-
 <header>
     <div class="color">
         <header>
@@ -225,53 +209,6 @@
 
             </div>
         </footer>
-
-        <!-- schema markup -->
-        <script type="application/ld+json">
-                    [
-                    {
-                        "@context": "http://schema.org",
-                        "@type": "Product",
-                        "name": "<%= datos.productoNombre %>",
-                        "image": "http://www.googleusercontent.com/%3C%=%20datos.url%20%%3E",
-                        "description": "&lt;%= datos.descripcion %&gt;",
-                        "offers": {
-                        "@type": "Offer",
-                        "price": "Precio: <%= datos.precio %>$"
-                        }},
-                        {
-                        "@context": "http://schema.org",
-                        "@type": "Product",
-                        "name": "<%= datos.productoNombre %>",
-                        "image": "http://www.googleusercontent.com/%3C%=%20datos.url%20%%3E",
-                        "description": "Categoria: &lt;%= datos.categoriaNombre %&gt;",
-                        "offers": {
-                        "@type": "Offer",
-                        "price": "Precio: <%= datos.precio %>$"
-                        }}
-                        {
-                        "@context": "http://schema.org",
-                        "@type": "Product",
-                        "name": "<%= datos.productoNombre %>",
-                        "image": "http://www.googleusercontent.com/%3C%=%20datos.url%20%%3E",
-                        "description": "Color: &lt;%= datos.color %&gt;",
-                        "offers": {
-                        "@type": "Offer",
-                        "price": "Precio: <%= datos.precio %>$"
-                        }},
-                        {
-                        "@context": "http://schema.org",
-                        "@type": "Product",
-                        "name": "<%= datos.productoNombre %>",
-                        "image": "http://www.googleusercontent.com/%3C%=%20datos.url%20%%3E",
-                        "description": "Material: &lt;%= datos.material %&gt;",
-                        "offers": {
-                        "@type": "Offer",
-                        "price": "Precio: <%= datos.precio %>$"
-                        }}
-                    ]
-                    </script>
-
 
 
         <!-- 
