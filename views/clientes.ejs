@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Open Grah Protocol -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Dreamland">
     <meta property="og:url" content="https://p3-prueba.onrender.com"> 
@@ -156,7 +157,21 @@
 
   gtag('config', 'G-1DGJH4S5CM');
 </script>
-
+ <!-- Schema Markup-->
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Product",
+        "name": "<%= datos[i].productoNombre %>",
+        "image": "http://www.googleusercontent.com/%3C%=%20datos[i].url%20%%3E",
+        "description": "Detalles",
+        "offers": 
+            {
+            "@type": "Offer",
+            "price": "Precio: <%= datos[i].precio %>$"
+            }
+        }
+        </script> 
 </head>
 
 <body>
@@ -358,21 +373,7 @@
         </div>
     </footer>
 
-    <!-- Schema Markup
-    <script type="application/ld+json">
-        {
-        "@context": "http://schema.org",
-        "@type": "Product",
-        "name": "<%= datos[i].productoNombre %>",
-        "image": "http://www.googleusercontent.com/%3C%=%20datos[i].url%20%%3E",
-        "description": "Detalles",
-        "offers": 
-            {
-            "@type": "Offer",
-            "price": "Precio: <%= datos[i].precio %>$"
-            }
-        }
-        </script> -->
+   
 
 
 
